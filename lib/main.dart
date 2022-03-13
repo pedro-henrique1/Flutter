@@ -8,18 +8,17 @@ class MeuApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(
-              title: const Text('Primeiro App'),
+              centerTitle: true,
+              title: Text('Me primeiro app'),
             ),
-            body: Center(
-                child: Column(
-              children: [
-                Text('Título'),
+            body: Row(
+              children: <Widget>[
                 Container(
-                    child: Icon(Icons.star, size: 30, color: Colors.blue)),
-                TextButton(
-                    onPressed: () => {print("click")},
-                    child: Text("clique aqui"))
+                    child: Image.asset(
+                  'assets/muro.jpg',
+                  width: 411,
+                ))
               ],
-            ))));
+            )));
   }
 }
